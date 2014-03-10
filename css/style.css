@@ -1,0 +1,137 @@
+body {
+  overflow: hidden;
+  position: relative;
+  background: #009ddb;
+}
+body h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 100px;
+  padding: 200px 0;
+}
+
+.sea {
+  position: relative;
+}
+.sea .layer {
+  position: absolute;
+  min-height: 600px;
+  min-width: 2000px;
+}
+.sea .wave {
+  position: absolute;
+  top: -7px;
+  height: 7px;
+  min-width: 100%;
+}
+.sea .layer:nth-child(1) {
+  margin-top: 0;
+  background: #3685b4;
+  left: -20px;
+  -webkit-animation: wave 5.77778s 0.1s infinite linear;
+  -moz-animation: wave 5.77778s 0.1s infinite linear;
+  animation: wave 5.77778s 0.1s infinite linear;
+}
+.sea .layer:nth-child(1) .wave {
+  background: url(../../images/common/wave-1.png) repeat-x;
+}
+.sea .layer:nth-child(2) {
+  margin-top: 20px;
+  background: #347da9;
+  left: -15px;
+  -webkit-animation: wave 5.33333s 0.1s infinite linear;
+  -moz-animation: wave 5.33333s 0.1s infinite linear;
+  animation: wave 5.33333s 0.1s infinite linear;
+}
+.sea .layer:nth-child(2) .wave {
+  background: url(../../images/common/wave-2.png) repeat-x;
+}
+.sea .layer:nth-child(3) {
+  margin-top: 40px;
+  background: #30759e;
+  left: -10px;
+  -webkit-animation: wave 4.88889s 0.1s infinite linear;
+  -moz-animation: wave 4.88889s 0.1s infinite linear;
+  animation: wave 4.88889s 0.1s infinite linear;
+}
+.sea .layer:nth-child(3) .wave {
+  background: url(../../images/common/wave-3.png) repeat-x;
+}
+.sea .layer:nth-child(4) {
+  margin-top: 60px;
+  background: #2b6c93;
+  left: -8px;
+  -webkit-animation: wave 4.44444s 0.1s infinite linear;
+  -moz-animation: wave 4.44444s 0.1s infinite linear;
+  animation: wave 4.44444s 0.1s infinite linear;
+}
+.sea .layer:nth-child(4) .wave {
+  background: url(../../images/common/wave-4.png) repeat-x;
+}
+.sea .layer:nth-child(5) {
+  margin-top: 80px;
+  background: #266387;
+  left: -13px;
+  -webkit-animation: wave 4s 0.1s infinite linear;
+  -moz-animation: wave 4s 0.1s infinite linear;
+  animation: wave 4s 0.1s infinite linear;
+}
+.sea .layer:nth-child(5) .wave {
+  background: url(../../images/common/wave-5.png) repeat-x;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 0.5%, 0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0, 0.5%, 0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0, 0.5%, 0) rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 0.5%, 0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0, 0.5%, 0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0, 0.5%, 0) rotateZ(-360deg);
+  }
+}
+
+@-moz-keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 0.5%, 0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0, 0.5%, 0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0, 0.5%, 0) rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 0.5%, 0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0, 0.5%, 0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0, 0.5%, 0) rotateZ(-360deg);
+  }
+}
+
+@-ms-keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 0.5%, 0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0, 0.5%, 0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0, 0.5%, 0) rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 0.5%, 0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0, 0.5%, 0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0, 0.5%, 0) rotateZ(-360deg);
+  }
+}
+
+@keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 0.5%, 0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0, 0.5%, 0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0, 0.5%, 0) rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 0.5%, 0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0, 0.5%, 0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0, 0.5%, 0) rotateZ(-360deg);
+  }
+}
