@@ -3,6 +3,8 @@ body {
 	position: relative;
 	background: #009ddb;
 	h1 {
+		position: relative;
+		z-index: 10;
 		text-align: center;
 		color: #fff;
 		font-size: 100px;
@@ -10,10 +12,43 @@ body {
 		line-height: 1;
 	}
 	.job {
+		position: relative;
+		z-index: 10;
 		text-align: center;
 		font-size: 20px;
 		color: #fff;
 		padding-bottom: 100px;
+	}
+}
+
+.sky {
+	.layer {
+		position: absolute;
+		min-height: 600px;
+	}
+	.layer:nth-child(1) {
+		top: 50px;
+		.cloud {
+			-webkit-animation: cloud 150s 0.1s infinite linear;
+			background: url(../../images/common/cloud-1.png) repeat-x;
+			height: 104px;
+		}
+	}
+	.layer:nth-child(2) {
+		top: 100px;
+		.cloud {
+			-webkit-animation: cloud 100s 0.1s infinite linear;
+			background: url(../../images/common/cloud-2.png) repeat-x;
+			height: 171px;
+		}
+	}
+	.layer:nth-child(3) {
+		top: 160px;
+		.cloud {
+			-webkit-animation: cloud 50s 0.1s infinite linear;
+			background: url(../../images/common/cloud-3.png) repeat-x;
+			height: 190px;
+		}
 	}
 }
 
