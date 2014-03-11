@@ -19,10 +19,16 @@ body {
 
 .sea {
 	position: relative;
+	.bote {
+		margin-top: -65px;
+		text-align: center;
+		-webkit-animation: wave 4.88889s 0.1s infinite linear;
+		-moz-animation: wave 4.88889s 0.1s infinite linear;
+		animation: wave 4.88889s 0.1s infinite linear;
+	}
 	.layer {
 		position: absolute;
 		min-height: 600px;
-		min-width: 2000px;
 	}
 	.wave {
 		position: absolute;
@@ -95,60 +101,4 @@ body {
 			background: url(../../images/common/wave-5.png) repeat-x;
 		}
 	}
-}
-
-@-webkit-keyframes wave {
-  0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,0.5%,0) rotateZ(0deg);
-    -moz-transform: rotateZ(0deg) translate3d(0,0.5%,0) rotateZ(0deg);
-    transform: rotateZ(0deg) translate3d(0,0.5%,0) rotateZ(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,0.5%,0) rotateZ(-360deg);
-    -moz-transform: rotateZ(360deg) translate3d(0,0.5%,0) rotateZ(-360deg);
-    transform: rotateZ(360deg) translate3d(0,0.5%,0) rotateZ(-360deg);
-  }
-}
-
-@-moz-keyframes wave {
-  0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,0.5%,0) rotateZ(0deg);
-    -moz-transform: rotateZ(0deg) translate3d(0,0.5%,0) rotateZ(0deg);
-    transform: rotateZ(0deg) translate3d(0,0.5%,0) rotateZ(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,0.5%,0) rotateZ(-360deg);
-    -moz-transform: rotateZ(360deg) translate3d(0,0.5%,0) rotateZ(-360deg);
-    transform: rotateZ(360deg) translate3d(0,0.5%,0) rotateZ(-360deg);
-  }
-}
-
-@-ms-keyframes wave {
-  0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,0.5%,0) rotateZ(0deg);
-    -moz-transform: rotateZ(0deg) translate3d(0,0.5%,0) rotateZ(0deg);
-    transform: rotateZ(0deg) translate3d(0,0.5%,0) rotateZ(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,0.5%,0) rotateZ(-360deg);
-    -moz-transform: rotateZ(360deg) translate3d(0,0.5%,0) rotateZ(-360deg);
-    transform: rotateZ(360deg) translate3d(0,0.5%,0) rotateZ(-360deg);
-  }
-}
-
-@keyframes wave {
-  0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,0.5%,0) rotateZ(0deg);
-    -moz-transform: rotateZ(0deg) translate3d(0,0.5%,0) rotateZ(0deg);
-    transform: rotateZ(0deg) translate3d(0,0.5%,0) rotateZ(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,0.5%,0) rotateZ(-360deg);
-    -moz-transform: rotateZ(360deg) translate3d(0,0.5%,0) rotateZ(-360deg);
-    transform: rotateZ(360deg) translate3d(0,0.5%,0) rotateZ(-360deg);
-  }
 }
