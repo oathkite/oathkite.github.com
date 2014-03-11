@@ -1,4 +1,34 @@
+@keyframes cloud {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: 900px;
+  }
+}
+
 @-webkit-keyframes cloud {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: 900px;
+  }
+}
+
+@-moz-keyframes cloud {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: 900px;
+  }
+}
+
+@-ms-keyframes cloud {
   0% {
     background-position: 0;
   }
@@ -95,7 +125,10 @@ body .job {
   top: 50px;
 }
 .sky .layer:nth-child(1) .cloud {
+  animation: cloud 150s 0.1s infinite linear;
   -webkit-animation: cloud 150s 0.1s infinite linear;
+  -moz-animation: cloud 150s 0.1s infinite linear;
+  -ms-animation: cloud 150s 0.1s infinite linear;
   background: url(../../images/common/cloud-1.png) repeat-x;
   height: 104px;
 }
@@ -103,7 +136,10 @@ body .job {
   top: 100px;
 }
 .sky .layer:nth-child(2) .cloud {
+  animation: cloud 100s 0.1s infinite linear;
   -webkit-animation: cloud 100s 0.1s infinite linear;
+  -moz-animation: cloud 100s 0.1s infinite linear;
+  -ms-animation: cloud 100s 0.1s infinite linear;
   background: url(../../images/common/cloud-2.png) repeat-x;
   height: 171px;
 }
@@ -111,7 +147,10 @@ body .job {
   top: 160px;
 }
 .sky .layer:nth-child(3) .cloud {
+  animation: cloud 50s 0.1s infinite linear;
   -webkit-animation: cloud 50s 0.1s infinite linear;
+  -moz-animation: cloud 50s 0.1s infinite linear;
+  -ms-animation: cloud 50s 0.1s infinite linear;
   background: url(../../images/common/cloud-3.png) repeat-x;
   height: 190px;
 }

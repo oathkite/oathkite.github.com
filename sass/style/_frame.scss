@@ -29,7 +29,10 @@ body {
 	.layer:nth-child(1) {
 		top: 50px;
 		.cloud {
+			animation: cloud 150s 0.1s infinite linear;
 			-webkit-animation: cloud 150s 0.1s infinite linear;
+			-moz-animation: cloud 150s 0.1s infinite linear;
+			-ms-animation: cloud 150s 0.1s infinite linear;
 			background: url(../../images/common/cloud-1.png) repeat-x;
 			height: 104px;
 		}
@@ -37,7 +40,10 @@ body {
 	.layer:nth-child(2) {
 		top: 100px;
 		.cloud {
+			animation: cloud 100s 0.1s infinite linear;
 			-webkit-animation: cloud 100s 0.1s infinite linear;
+			-moz-animation: cloud 100s 0.1s infinite linear;
+			-ms-animation: cloud 100s 0.1s infinite linear;
 			background: url(../../images/common/cloud-2.png) repeat-x;
 			height: 171px;
 		}
@@ -45,7 +51,10 @@ body {
 	.layer:nth-child(3) {
 		top: 160px;
 		.cloud {
+			animation: cloud 50s 0.1s infinite linear;
 			-webkit-animation: cloud 50s 0.1s infinite linear;
+			-moz-animation: cloud 50s 0.1s infinite linear;
+			-ms-animation: cloud 50s 0.1s infinite linear;
 			background: url(../../images/common/cloud-3.png) repeat-x;
 			height: 190px;
 		}
