@@ -1,5 +1,4 @@
 body {
-	overflow: hidden;
 	position: relative;
 	background: #009ddb;
 	h1 {
@@ -21,10 +20,15 @@ body {
 	}
 }
 
+#content_base {
+	position: relative;
+	overflow: hidden;
+}
+
 .sky {
 	.layer {
 		position: absolute;
-		min-height: 600px;
+		min-height: 1300px;
 	}
 	.layer:nth-child(1) {
 		top: 50px;

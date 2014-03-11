@@ -95,7 +95,6 @@
 }
 
 body {
-  overflow: hidden;
   position: relative;
   background: #009ddb;
 }
@@ -117,9 +116,14 @@ body .job {
   padding-bottom: 100px;
 }
 
+#content_base {
+  position: relative;
+  overflow: hidden;
+}
+
 .sky .layer {
   position: absolute;
-  min-height: 600px;
+  min-height: 1300px;
 }
 .sky .layer:nth-child(1) {
   top: 50px;

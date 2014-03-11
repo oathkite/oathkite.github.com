@@ -1,6 +1,10 @@
 $.oathkite = function() {
 	this.setWave = function() {
-		$('.layer').width($(window).width() + 40);
+		$('#content_base').css({
+			width: $(window).width(),
+			minHeight: $(window).height()
+		});
+		$('.layer').width($(window).width() + 100);
 	}
 	
 	this.setWave();
